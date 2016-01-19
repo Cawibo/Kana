@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "Kana (KissAnimeNoAds)",
+	"version": "0.2",
+
+	"description": "If a site matches 'https://kissanime.to/Anime/*' this script will Hide ads and set Quality to High.",
+
+	"content_scripts": [
+		{
+			"matches": ["https://kissanime.to/Anime/*"],
+			"js": ["script.js"],
+			"run_at": "document_end", // start, end, idle
+			"all_frames": true
+		}
+	]
+}
