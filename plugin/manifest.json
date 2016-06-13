@@ -4,12 +4,13 @@
 	"version": "0.2",
 
 	"description": "If a site matches 'https://kissanime.to/Anime/*' this script will Hide ads and set Quality to High.",
-
+	"icons": { "128": "icon_128.png" },
+	
 	"content_scripts": [
 		{
 			"matches": ["https://kissanime.to/Anime/*"],
 			"js": ["script.js"],
-			"run_at": "document_end", // start, end, idle
+			"run_at": "document_end",
 			"all_frames": true
 		}
 	]
